@@ -18,7 +18,7 @@ body{
 .top-fixed-bg {
     background-image: url(../imgs/top.jpg);
     background-position: right top;
-    background-size: cover;
+    /*background-size: cover; */
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
@@ -132,16 +132,16 @@ footer p {
 ------------------------------- */
 .at-fixed-bg {
     background-image: url(../imgs/AT.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: center top;
+    /*background-size: cover;*/
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
 }
 .tw-fixed-bg {
     background-image: url(../imgs/TW.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: center top;
+    /*background-size: cover;*/
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
@@ -206,6 +206,12 @@ footer p {
 
 
 @media (max-width: 600px){
+
+.top-fixed-bg,
+.at-fixed-bg,
+.tw-fixed-bg {
+    background-size: 300%;
+}    
 
 .top-title h1,
 .cont-title h1 {
