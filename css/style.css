@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: Helvetica, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    color: #113;
+    padding: 0;
+    margin:0;
+}
+
+
+/* TOP PAGE
+------------------------------- */
+.top-fixed-bg {
+    background-image: url(../imgs/top.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+.top-title {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: 0;
+    padding-left: 10%;
+}
+.top-title h1 {
+    font-size: 8rem;
+    margin: 0;
+}
+.top-title h2{
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 3rem;
+    margin: 0;
+    padding-left: 1%;
+    font-weight: normal ;
+    font-style: italic;
+}
+.second-contents,
+.third-contents {
+    display: flex;
+}
+article {
+    width: 50%;
+    position: relative;
+}
+aside{
+    width: 50%;
+    position: relative;
+}
+.second-manuscript {
+    margin: 50vh 5vw 50vh 0;
+}
+h4 {
+    font-size: 3rem;
+    margin:0;
+}
+p {
+    font-size: 0.8rem;
+    margin:0;
+}
+.second-contents h3 {
+    font-size: 2rem;
+    margin:60vh 5vw 40vh 20vw;
+}
+.third-contents h3 {
+    font-size: 2rem;
+    margin:15vh 5vw 40vh 20vw;
+}
+.link-imgat,
+.link-imgwt {
+    max-width: 100%;
+}
+.link-imgat.state-show,
+.link-imgwt.state-show  {
+    opacity: 40%;
+}
+
+.linkat,
+.linkwt {
+    position: relative;
+    background-color:#000;
+    width: 80%;
+    margin-bottom: 2vh;
+}
+.link-textat,
+.link-textwt {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+footer {
+    height: 25vh;
+    width: 100vw;
+    background-color: #001;
+}
+h5 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 30px 0 0 10vw;
+    color: #fff;
+}
+h6 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0 0 10vw;
+    color: #999;
+    
+}
+footer p {
+    font-size: 1rem;
+    padding: 10px 0 0 10vw;
+    color: #999;
+
+}
+
+
+/* CONTENTS PAGE
+------------------------------- */
+.at-fixed-bg {
+    background-image: url(../imgs/AT.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+.tw-fixed-bg {
+    background-image: url(../imgs/TW.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+.cont-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+}
+
+.cont-title h1 {
+    font-size: 8rem;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.cont-title h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    font-weight: lighter;
+    color: #fff;
+}
+.cont-caption {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 40vh;
+}
+.cont-manuscript {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5vh;
+    padding: 0 5%;
+}
+.cont-img {
+    max-width: 100%;
+    margin-bottom: 2vh;
+}
+.cont-end {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0 5%;
+}
+.home-button {
+    margin: 30vh auto 0 auto;
+    max-width: 50px;
+}
+.home-button img {
+    max-width: 50px;
+}
+.home-button p {
+    text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 10vh;
+}
+
+
+@media (max-width: 600px){
+
+.top-title h1,
+.cont-title h1 {
+    font-size: 3rem;
+}
+.top-title h2,
+.cont-title h2 {
+    font-size: 1.5rem;
+}
+.second-contents,
+.third-contents {
+    flex-direction: column;
+}
+h4 {
+    font-size: 2rem;
+}
+p {
+    font-size:0.7rem;
+    padding-right: 2%;
+}
+.second-contents h3,
+.third-contents h3 {
+    margin: 20vh 0 2vh 0;
+    padding-left: 10%;
+    transform: translate(0,-50%);
+    font-size: 1rem;
+}
+.second-manuscript {
+    margin:0;
+    padding-left: 10%;
+}
+article,
+aside {
+    width: 100%;
+}
+.linkat,
+.linkwt {
+    width: 88%;
+    margin-left: 10%;
+}
+
+
+.cont-caption {
+    font-size: 1.5rem;
+    margin-top: 20vh;
+}
+.cont-manuscript {
+    font-size: 0.7rem;
+}
+.cont-end {
+    font-size: 1rem;
+}
+.home-button {
+    margin: 10vh auto 0 auto;
+    max-width: 30px;
+}
+.home-button img {
+    max-width: 30px;
+}
+.home-button p {
+    text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 10vh;
+}
+
+footer {
+    height: 15vh;
+    background-color: #001;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.8rem;    
+}
+footer p {
+    font-size: 0.7rem;
+
+}
+}
