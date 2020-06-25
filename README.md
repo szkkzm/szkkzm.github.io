@@ -1,0 +1,1 @@
+# szkkzm.github.io
